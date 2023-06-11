@@ -14,10 +14,10 @@
     </header>
     <main class="container row">
         <div class="col-4">
-            <div class="input-group mb-3 col">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <form class="input-group mb-3 col">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" id="searchInput">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-            </div>
+            </form>
             <h2>Recent Searches</h2>
             <div class="d-grid gap-2">
                 <button class="btn btn-primary" type="button">Button</button>
@@ -26,12 +26,14 @@
         </div>
         <div class="col-8">
             <div class="row">
-                <h2>Today's Weather</h2>
+                <h2 id="today"></h2>
             </div>
-            <div class="row">
-                <h2>This week's weather</h2>
+            <div class="row" id="thisWeek">
             </div>
         </div>
     </main>
+    <script src="./assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
 </body>
 </html>
