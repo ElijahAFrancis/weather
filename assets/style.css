@@ -1,3 +1,69 @@
+:root {
+    --primary: #39ace7;
+    --secondary: #0784b5;
+    --light-grey: #414c50;
+    --grey: #2d383c;
+    --dark-grey: #192428;
+}
+
+body {
+    margin-left: 2rem;
+    color: var(--primary);
+    background-color: var(--grey);
+}
+
+#searchInput {
+    border-radius: 1rem;
+    background-color: var(--dark-grey);
+    border-color: var(--secondary);
+    color: var(--primary);
+}
+
+#button-addon2 {
+    margin-left: .5rem;
+    background-color: var(--light-grey);
+    color: var(--primary);
+    border-radius: 1rem;
+    border-color: var(--secondary);
+}
+
+#button-addon2:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+header {
+    margin: 2rem 0rem 0rem 2rem;
+}
+
+.recent {
+    background-color: var(--light-grey);
+    color: var(--primary);
+    border-radius: 1rem;
+    border-color: var(--secondary);
+}
+
+.recent:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+#today {
+    background-color: var(--light-grey);
+    border-style: solid;
+    border-color: var(--secondary);
+    border-radius: 1rem;
+}
+
+.card{
+    background-color: var(--light-grey);
+    border-style: solid;
+    border-color: var(--secondary);
+    border-radius: 1rem;
+    margin-right: .3rem;
+    margin-left: .3rem;
+}
+
 .hidden {
     display: none;
 }

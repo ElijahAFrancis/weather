@@ -32,6 +32,7 @@ function recentSearch() {
             recentSearchesEl.appendChild(recentSearchBtn);
         }
     }
+
     $(".recent").click(function(event) {
         event.preventDefault();
         searchInput = $(this).val();
@@ -69,6 +70,7 @@ function search() {
                 recentSearchesArr.push(data.city.name);
                 }
                 localStorage.setItem("recentSearches", JSON.stringify(recentSearchesArr));
+                todayEl.removeAttribute('class')
                 todayEl.innerHTML = `
                     <h2>${data.city.name} ${dayjs.unix(data.list[0].dt).format('M/DD/YYYY')}</h2>
                     <img src="https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png">
@@ -122,10 +124,4 @@ function search() {
     })
 }
 
-$(".recent").click(function(event) {
-    event.preventDefault();
-    searchInput = $(this).val();
-    console.log(searchInput);
-    search
-})
-recentSearch()
+recentSearch();
