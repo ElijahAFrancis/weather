@@ -50,13 +50,13 @@ $(searchBtn).click(function(event) {
 
 function search() {
     console.log(searchInput);
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchInput}&limit=1&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${searchInput}&limit=1&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
             console.log(data);
             lat = data[0].lat;
             lon = data[0].lon;
-            fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`)
+            fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`)
             .then(response => response.json())
             .then(data => {
                 console.log(data)
