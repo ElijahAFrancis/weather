@@ -81,42 +81,47 @@ function search() {
                 thisWeekEl.innerHTML = `
                     <div class="card" style="max-width: 10rem;">
                         <div class="card-body">
-                            <h5>${dayjs.unix(data.list[0].dt).format('M/DD/YYYY')}</h5>
-                            <p>Temp: ${data.list[0].main.temp}°F</p>
-                            <p>Wind: ${data.list[0].wind.speed}MPH</p>
-                            <p>Humidity: ${data.list[0].main.humidity}%</p>
+                            <h5>${dayjs.unix(data.list[8].dt).format('M/DD/YYYY')}</h5>
+                            <img src="https://openweathermap.org/img/wn/${data.list[8].weather[0].icon}.png">
+                            <p>Temp: ${data.list[8].main.temp}°F</p>
+                            <p>Wind: ${data.list[8].wind.speed}MPH</p>
+                            <p>Humidity: ${data.list[8].main.humidity}%</p>
                         </div>
                     </div>
                     <div class="card" style="max-width: 10rem;">
                         <div class="card-body">
-                            <h5>${dayjs.unix(data.list[0].dt).format('M/DD/YYYY')}</h5>
-                            <p>Temp: ${data.list[0].main.temp}°F</p>
-                            <p>Wind: ${data.list[0].wind.speed}MPH</p>
-                            <p>Humidity: ${data.list[0].main.humidity}%</p>
+                            <h5>${dayjs.unix(data.list[16].dt).format('M/DD/YYYY')}</h5>
+                            <img src="https://openweathermap.org/img/wn/${data.list[16].weather[0].icon}.png">
+                            <p>Temp: ${data.list[16].main.temp}°F</p>
+                            <p>Wind: ${data.list[16].wind.speed}MPH</p>
+                            <p>Humidity: ${data.list[16].main.humidity}%</p>
                         </div>
                     </div>
                     <div class="card" style="max-width: 10rem;">
                         <div class="card-body">
-                            <h5>${dayjs.unix(data.list[0].dt).format('M/DD/YYYY')}</h5>
-                            <p>Temp: ${data.list[0].main.temp}°F</p>
-                            <p>Wind: ${data.list[0].wind.speed}MPH</p>
-                            <p>Humidity: ${data.list[0].main.humidity}%</p>
+                            <h5>${dayjs.unix(data.list[24].dt).format('M/DD/YYYY')}</h5>
+                            <img src="https://openweathermap.org/img/wn/${data.list[24].weather[0].icon}.png">
+                            <p>Temp: ${data.list[24].main.temp}°F</p>
+                            <p>Wind: ${data.list[24].wind.speed}MPH</p>
+                            <p>Humidity: ${data.list[24].main.humidity}%</p>
                         </div>
                     </div>
                     <div class="card" style="max-width: 10rem;">
                         <div class="card-body">
-                            <h5>${dayjs.unix(data.list[0].dt).format('M/DD/YYYY')}</h5>
-                            <p>Temp: ${data.list[0].main.temp}°F</p>
-                            <p>Wind: ${data.list[0].wind.speed}MPH</p>
-                            <p>Humidity: ${data.list[0].main.humidity}%</p>
+                            <h5>${dayjs.unix(data.list[32].dt).format('M/DD/YYYY')}</h5>
+                            <img src="https://openweathermap.org/img/wn/${data.list[32].weather[0].icon}.png">
+                            <p>Temp: ${data.list[32].main.temp}°F</p>
+                            <p>Wind: ${data.list[32].wind.speed}MPH</p>
+                            <p>Humidity: ${data.list[32].main.humidity}%</p>
                         </div>
                     </div>
                     <div class="card" style="max-width: 10rem;">
                         <div class="card-body">
-                            <h5>${dayjs.unix(data.list[0].dt).format('M/DD/YYYY')}</h5>
-                            <p>Temp: ${data.list[0].main.temp}°F</p>
-                            <p>Wind: ${data.list[0].wind.speed}MPH</p>
-                            <p>Humidity: ${data.list[0].main.humidity}%</p>
+                            <h5>${dayjs.unix(data.list[39].dt).format('M/DD/YYYY')}</h5>
+                            <img src="https://openweathermap.org/img/wn/${data.list[39].weather[0].icon}.png">
+                            <p>Temp: ${data.list[39].main.temp}°F</p>
+                            <p>Wind: ${data.list[39].wind.speed}MPH</p>
+                            <p>Humidity: ${data.list[39].main.humidity}%</p>
                         </div>
                     </div>
                 `
